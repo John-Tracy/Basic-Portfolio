@@ -1,3 +1,10 @@
+
+
+
+
+/* override styles */
+
+
 #main {
 	float: left;
 	width: 600px;
@@ -15,6 +22,7 @@
 	padding-right: 20px;
 	padding-left: 20px;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 #main p {
@@ -24,7 +32,7 @@
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 15px;
 	margin-top: 0;
-	padding-top: 0;
+	padding-top: 20px;
 	line-height: 2;
 }
 
@@ -34,7 +42,9 @@
 	color: #4aaaa5;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	border-bottom: 2px solid #666666;
-	padding-bottom: 19px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	font-size: 32px;
 }
 
 
