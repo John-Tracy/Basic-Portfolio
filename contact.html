@@ -1,85 +1,66 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-	<title>John Tracy's Basic Portfolio</title>
-	 <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
-	<link rel="stylesheet" type="text/css" href="assets/css/index_style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact | John Tracy</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- Header section -->
-
-	<header>
-
-		<div id="heading">
-		
-		<div id="headText"><h1>John Tracy</h1></div>
-		
+	<header id="masthead">
+		<div class="container">
+			<a href="index.html" id="logo">John Tracy</a>
+			<nav>
+				<a href="index.html">About</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
 		</div>
-		
-		<nav>
-			<table cellpadding="0" cellspacing="5">
-				<tr>
-					<td class="linkborder"><a href="index.html">About</a></td>
-					<td class="linkborder"><a href="portfolio.html">Portfolio</a></td>
-					<td><a href="contact.html">Contact</a></td>
-				</tr>
-			</table>
-		</nav>
-		
 	</header>
-	
-	<!-- main content section -->
-	
-	<section id="main">
-		<h2>Contact</h2>
 
-		<!-- Contact form for vistor submission -->
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
 
-		<form>
-			<fieldset>
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="John Smith" required="required">
+					</li>
+					<li>
+						<label for="email">Email</label>
+						<input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required"></textarea>
+					</li>
+				</ul>
+				<input type="submit">
+			</form>
 
-				<label for="somebodysname">Name</label>
-				<input name="somebodysname" id="somebodysname" class="textbar"/>
-				<label for="emailadd">Email</label>
-				<input name="emailadd" id="emailadd" class="textbar"/>
-				<label for="message">Message</label>
-				<textarea name="message" id="message" class="textbar"></textarea>
-				
-					
-				<div id="submitbutton">
-					<!-- <a href="#" id="submit">Submit</a> -->
-					<input type="submit" value="Submit" />
-				</div>
-				
-			</fieldset>
-		</form>
-	
-	</section>
-	<aside id="connect">
-		<h3>Connect with Me</h3>
+		</section>
 
-			<hr/>
-		
-		<a href="https://github.com/John-Tracy"><img src="assets/images/githubicon.png"></a>
+		<section class="sidebar">
+			<div id="connect">
+				<h2>Connect with Me</h2>
 
-		<a href="http://stackoverflow.com/users/6158740/john-tracy?tab=profile"><img src="assets/images/stackicon.png"></a>
-
-		<a href="https://www.linkedin.com/in/john-tracy-140288a8?trk=hp-identity-name"><img src="assets/images/linkedinicon.png"></a>
-
-	</aside>
-
-	<!-- footer section -->
+				<a href="https://github.com/John-Tracy"><img src="assets/images/githubicon.png" class="social" alt="Github"></a>
+				<a href="https://www.linkedin.com/in/john-tracy-140288a8?trk=hp-identity-name"><img src="assets/images/linkedinicon.png" class="social" alt="LinkedIn"></a>
+				<a href="http://stackoverflow.com/users/6158740/john-tracy?tab=profile"><img src="assets/images/stackicon.png" class="social" alt="Stack Overflow"></a>
+			</div>
+		</section>
+	</div>
 
 	<footer>
-		<p>&copy; Copyright 2016 John Tracy</p>
+		<div class="container">
+			&copy; Copyright 2016 John Tracy
+		</div>
 	</footer>
 </body>
 </html>
-
-
-
-
-
 
